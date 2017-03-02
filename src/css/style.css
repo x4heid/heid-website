@@ -1,5 +1,5 @@
 html {
-
+  min-width: 100%;
 }
 
 body {
@@ -28,7 +28,7 @@ border-style: solid;
 
 #logo-nav {
   display: flex;
-  flex: 0 0 514px;
+  flex: 0 0 320px;
   justify-content:flex-start;
 }
 
@@ -48,20 +48,20 @@ nav {
 
 .nav-button {
   display: flex;
-  border: 0;
   border: 2px;
+  border-left: 0px;
   border-style: solid;
   border-radius: 10%;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-left: 0px;
   margin-left: 0px;
-  flex: 0 0 150px;
+  flex: 1 0 85px;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 100%;
   font-family: Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.36);
+  flex-grow: 1;
 }
 
 
@@ -88,12 +88,16 @@ section {
 #introduction {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: stretch;
+}
+
+#introduction h1 {
+  align-self: center;
 }
 
 #introduction-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -102,6 +106,28 @@ section {
   width: 200px;
 }
 
+
+#work {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#work-samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-sample img {
+  width: 320px;
+  height: 240px;
+  margin-bottom: 10px;
+}
+
+.work-sample-overlay {
+  display: none;
+}
 
 
 
